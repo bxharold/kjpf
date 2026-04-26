@@ -59,6 +59,7 @@ OK, that was better;
          completely: @app.route("LED/lt LEDid gt/lt onoff gt")
 4. Maybe a markdown cheat-sheet would help.
 
+==> yup, the file extension ".md" makes the rendering different.
  
 
 
