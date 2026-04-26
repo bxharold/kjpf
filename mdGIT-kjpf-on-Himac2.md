@@ -37,26 +37,22 @@ To https://github.com/bxharold/kjpf.git
 
 Now, I'm going to add this file: 
     git add -A
+    git commit -am "Updated README."
     git push
-... and check github.
-
-... No change on github.  maybe a commit?
-git commit -am "Updated README."
-git push
 
 
-OK, that was better; 
 1. I had to back out and back in to this file on github to see the changes.
 2. maybe there was something different with editing an existing file, and adding a new file.
 3. this is a markdown thing:  underscores and brackets have special meaning.
    to wit:
    - kjpf.py serves up the client UI  (port __CC__)
          CC should be surrounded by double-underscores
+   - kjpf.py serves up the client UI  `(port __CC__) backticked`
    - The web client browses to http://HiMac2.local:[__CC__]/kfpj.html
          CC is correctly surrounded by double-underscores
    - @app.route("/LED/<LEDid>/<onoff>")
          this should be LED/lt LEDid gt/lt onoff gt
-         completely: @app.route("LED/lt LEDid gt/lt onoff gt")
+   `- @app.route("/LED/<LEDid>/<onoff>")`  (using backticks)
 4. Maybe a markdown cheat-sheet would help.
 
  
