@@ -19,14 +19,6 @@ Javascript's "await/fetch" to make the API requests, and updates the DOM with
 the info contained in the response.
 
 
-## API kctrl.py has endpoints for bbmini LEDs, servo, CPU performance, and general info:  
-- @app.route("/LEDstate")
-- @app.route("/LED/<LEDid>/<onoff>") 
-- @app.route("/CPUperf")
-- @app.route("/util")
-- @app.route("/servo")
-
-
 ## Environment:
 - bbmini is a dev "platform" (aka "block of wood") with a Pi3b+ (mc24b), an attached camera, a PIR sensor, a pushbutton, and 3 LEDs.
 - mc24b manages the camera (camstream.py) and implements the API ("kctrl.py")
@@ -39,6 +31,14 @@ the info contained in the response.
 - kjpf.py serves up the client UI  (port __CC__)
 - The web client browses to http://HiMac2.local:[__CC__]/kfpj.html
 
+### API kctrl.py has endpoints for bbmini LEDs, servo, CPU performance, and general info:  
+- @app.route("/LEDstate")
+- @app.route("/LED/<LEDid>/<onoff>") 
+- @app.route("/CPUperf")
+- @app.route("/util")
+- @app.route("/servo")
+
+
 ### Client functions (Javascript):
 
 LEDrefresh() invokes the /LEDstate endpoint, then calls the DOM updater.
@@ -48,3 +48,4 @@ and then calls the DOM updater refreshLEDcheckboxes(state)
 async function LED() makes the API request to the /LED/<>/<> endpoint
 kctrl.py updates the "state" (and the LEDs) and returns a summary.
 LED() then calls the updater refreshLEDcheckboxes() with the new state.
+
