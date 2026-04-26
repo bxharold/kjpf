@@ -44,3 +44,21 @@ Now, I'm going to add this file:
 git commit -am "Updated README."
 git push
 
+
+OK, that was better; 
+1. I had to back out and back in to this file on github to see the changes.
+2. maybe there was something different with editing an existing file, and adding a new file.
+3. this is a markdown thing:  underscores and brackets have special meaning.
+   to wit:
+   - kjpf.py serves up the client UI  (port __CC__)
+         CC should be surrounded by double-underscores
+   - The web client browses to http://HiMac2.local:[__CC__]/kfpj.html
+         CC is correctly surrounded by double-underscores
+   - @app.route("/LED/<LEDid>/<onoff>")
+         this should be LED/lt LEDid gt/lt onoff gt
+         completely: @app.route("LED/lt LEDid gt/lt onoff gt")
+4. Maybe a markdown cheat-sheet would help.
+
+ 
+
+
