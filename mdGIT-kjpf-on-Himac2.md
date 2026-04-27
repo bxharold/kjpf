@@ -38,9 +38,8 @@ Now, I'm going to add all files I've updated or added:
          this should be LED/lt LEDid gt/lt onoff gt
    `- @app.route("/LED/<LEDid>/<onoff>")`  (using backticks)
 4. Maybe a markdown cheat-sheet would help.
-https://www.markdownguide.org/basic-syntax/#:~:text=First%20line%20with%20two%20spaces,I%20just%20love%20bold%20text.
+`https://www.markdownguide.org/basic-syntax`
 
-`https://www.markdownguide.org/basic-syntax/#:~:text=First%20line%20with%20two%20spaces,I%20just%20love%20bold%20text.`
 
 
  
