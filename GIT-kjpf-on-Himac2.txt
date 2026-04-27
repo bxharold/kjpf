@@ -1,0 +1,49 @@
+2026Apr26    file: GIT-kjpf-on-Himac2.txt
+
+I've  "suspended" dev on himac2 jpf, moving to ~/Git/kjpf
+Working out a reasonable git/github flow...
+
+Created empty repo kjpf on github, then cloned to ~Git/kjpf
+
+Counting objects: 100% (6/6), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 469 bytes | 36.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/bxharold/kjpf.git
+   ebfb581..13afb3a  master -> master
+
+         >>> the change was visible on github.
+
+Now, I'm going to add this file: 
+    git add -A
+    git commit -am "Updated README."
+    git push
+
+1. I had to back out and reload  this file on github to see the changes.
+2. A markdown thing:  underscores and brackets have special meaning.
+         the file extension ".md" makes github rendering different.
+   TO WIT:
+   - kjpf.py serves up the client UI  (port __CC__)
+         CC should be surrounded by double-underscores
+   - The web client browses to http://HiMac2.local:[__CC__]/kfpj.html
+         CC is correctly surrounded by double-underscores
+   - @app.route("/LED/<LEDid>/<onoff>")
+         this should be LED/lt LEDid gt/lt onoff gt
+         completely: @app.route("LED/lt LEDid gt/lt onoff gt")
+3. Good reference for markdown syntax:
+         https://www.markdownguide.org/basic-syntax/
+
+OK now, the "add -A  commit -am "" push" cycle is good for "solidifying" changes from HiMac2 to github repo.
+
+
+What happens now, when I move my dev platform to mc24b?
+I know that I should be aware of "git pull" and "git status"
+
+I plan to clone kjpf, then update README, and see what happens.
+
+
+ 
+
+
