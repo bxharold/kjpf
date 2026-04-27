@@ -43,7 +43,10 @@ I know that I should be aware of "git pull" and "git status"
 
 I plan to clone kjpf, then update README, and see what happens.
 
-
+I forgot to put v1_GIT-kjpf-on-Himac2  into .gitignore, now its on github. How to remove it from github yet keep it locally?
+  Important Notes
+  Untracked Files Only: A .gitignore file only prevents Git from tracking new files. If a file is already being tracked (already committed), adding it to .gitignore will not stop Git from tracking changes to it.
+  Stop Tracking Files: To stop tracking a file that has already been committed without deleting it from your local computer, use the command: git rm --cached <file>.
  
 
 
