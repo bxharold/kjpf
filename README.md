@@ -2,7 +2,7 @@
 
 ## Overview:
 ***kjpf*** (kamera,javascript,python,flask) is an ongoing Raspberry Pi/Camera "maker" project.    
-TL;DR -- Pi camera streams video to a browser with a UI that controls the action.
+_TL;DR -- Pi camera streams video to a browser with a UI that controls the action._
 
 **kjpf**'s roots go back to "*birdiecam.php*" (a browser-based UI to control and monitor 
 a camera attached to a Raspberry Pi3b+) and a breadboard setup (bbmini) that 
